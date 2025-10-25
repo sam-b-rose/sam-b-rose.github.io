@@ -8,8 +8,7 @@
   }
 
   h1,
-  h2,
-  h3 {
+  h2 {
     font-family: "Crimson Pro", serif;
   }
 
@@ -52,7 +51,7 @@
   /* Print styles */
   @media print {
     body {
-      font-size: 12pt;
+      font-size: 11pt;
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
     }
@@ -66,13 +65,8 @@
       page-break-after: avoid;
     }
 
-    .job-entry,
-    .project-entry {
-      page-break-inside: avoid;
-    }
-
     .main-content {
-      padding-right: 2rem;
+      /*padding-right: 2rem;*/
     }
   }
 }
