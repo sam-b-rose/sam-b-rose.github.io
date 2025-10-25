@@ -1,0 +1,78 @@
+@import "tailwindcss" layer(tailwind);
+
+@layer tailwind, base;
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Crimson Pro", serif;
+  }
+
+  /* External link arrow icon */
+  .external-link {
+    position: relative;
+  }
+
+  .external-link .arrow-icon {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    flex-shrink: 0;
+    transition: transform 150ms;
+    margin-left: 0.125rem;
+    margin-bottom: 0.25rem;
+    transform: translateY(1px);
+  }
+
+  .external-link:hover .arrow-icon,
+  .external-link:focus-visible .arrow-icon {
+    transform: translate(0.125rem, -0.125rem);
+  }
+
+  /* Ensure sidebar stays in place */
+  @media (min-width: 1024px) {
+    .sidebar {
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .external-link .arrow-icon {
+      transition: none;
+    }
+  }
+
+  /* Print styles */
+  @media print {
+    body {
+      font-size: 12pt;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .external-link .arrow-icon {
+      display: none;
+    }
+
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+
+    .job-entry,
+    .project-entry {
+      page-break-inside: avoid;
+    }
+
+    .main-content {
+      padding-right: 2rem;
+    }
+  }
+}
