@@ -26,81 +26,58 @@
   <body class="bg-white text-gray-800">
     <div class="container mx-auto px-8 py-8 max-w-7xl">
       <!-- Header -->
-      <header class="mb-8">
-        <div class="flex items-center gap-3 mb-3">
-          <svg
-            class="h-10 w-10"
-            fill="none"
-            viewBox="0 0 479 446"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="currentColor"
-              d="m137.42 189.82 133.49 96.73-86.38-105.43-1.47-61.92 57.42-44 69.2 17.4 20.61 46.05v51.17l-59.38 58.34 87.85-42.47 8.83-86.49-57.9-63.45L230.17 45l-92.76 59.88v84.94Z"
-            ></path>
-            <path
-              fill="currentColor"
-              d="m218.4 138.65 22.08 42.47 47.6-12.79c-.65-6.31-17.17-29.68-17.17-29.68s-40.08-3.58-52.51 0ZM111.9 258.4l95.2 98.25L96.69 327.5 0 189.82 38.5 93 139 46.5 84.9 150.93l27 107.47Zm246.86 40.94-111.4 66.02 120.23-18.43L479 233.83V104.88L374 75.2l35.8 75.74-51.04 148.4Z"
-            ></path>
-            <path
-              fill="currentColor"
-              d="m103.55 369.96 126.63 46.06L123.68 437 0 327.49v-69.1l103.55 111.57ZM367.6 445.5l-96.69-29.48 96.68-39.4 103.79-89.12-9.88 69.5-93.9 88.5Z"
-            ></path>
-          </svg>
+      <header class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center mb-6">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-3">
+            <svg
+              class="h-10 w-10"
+              fill="none"
+              viewBox="0 0 479 446"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="currentColor"
+                d="m137.42 189.82 133.49 96.73-86.38-105.43-1.47-61.92 57.42-44 69.2 17.4 20.61 46.05v51.17l-59.38 58.34 87.85-42.47 8.83-86.49-57.9-63.45L230.17 45l-92.76 59.88v84.94Z"
+              ></path>
+              <path
+                fill="currentColor"
+                d="m218.4 138.65 22.08 42.47 47.6-12.79c-.65-6.31-17.17-29.68-17.17-29.68s-40.08-3.58-52.51 0ZM111.9 258.4l95.2 98.25L96.69 327.5 0 189.82 38.5 93 139 46.5 84.9 150.93l27 107.47Zm246.86 40.94-111.4 66.02 120.23-18.43L479 233.83V104.88L374 75.2l35.8 75.74-51.04 148.4Z"
+              ></path>
+              <path
+                fill="currentColor"
+                d="m103.55 369.96 126.63 46.06L123.68 437 0 327.49v-69.1l103.55 111.57ZM367.6 445.5l-96.69-29.48 96.68-39.4 103.79-89.12-9.88 69.5-93.9 88.5Z"
+              ></path>
+            </svg>
 
-          <h1 class="text-5xl font-semibold text-gray-900">Sam Rose</h1>
+            <h1 class="text-5xl font-semibold text-gray-900">Sam Rose</h1>
+          </div>
+          <p class="text-sm text-gray-700 max-w-[40ch]">
+            Software engineer specializing in design systems, accessibility, and
+            developer experience
+          </p>
         </div>
-        <div class="flex flex-wrap gap-3 text-sm text-gray-600 items-center">
-          <a
-            href="mailto:hello@samrose.me"
-            class="hover:text-gray-900 transition-colors"
+        <div
+          class="lg:col-span-1 flex flex-col gap-1 text-sm not-print:text-gray-600 items-start"
+        >
+          <a href="mailto:hello@samrose.me" class="link-hover"
             >hello@samrose.me</a
           >
-          <span class="text-gray-400">|</span>
-          <a
-            href="tel:+18653236200"
-            class="hover:text-gray-900 transition-colors"
-            >+1 (865) 323-6200</a
-          >
-          <span class="print:hidden text-gray-400">|</span>
+          <a href="tel:+18653236200" class="link-hover">+1 (865) 323-6200</a>
           <a
             href="https://github.com/sam-b-rose"
             target="_blank"
-            class="print:hidden hover:text-gray-900 transition-colors inline-flex items-center gap-1.5"
+            class="link-hover"
             title="GitHub"
           >
-            <svg
-              class="w-4 h-4"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <span>sam-b-rose</span>
+            github.com/sam-b-rose
           </a>
-          <span class="print:hidden text-gray-400">|</span>
           <a
             href="https://linkedin.com/in/sam-b-rose"
             target="_blank"
-            class="print:hidden hover:text-gray-900 transition-colors inline-flex items-center gap-1.5"
+            class="link-hover"
             title="LinkedIn"
           >
-            <svg
-              class="w-4 h-4"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-              />
-            </svg>
-            <span>sam-b-rose</span>
+            linkedin.com/in/sam-b-rose
           </a>
         </div>
       </header>
@@ -111,11 +88,11 @@
         <div class="lg:col-span-2 main-content">
           <!-- About -->
           <section class="print:hidden mb-10">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">About</h2>
+            <h2 class="section-heading">About</h2>
 
             <!-- Short version -->
-            <div id="about-short" class="text-gray-700 leading-relaxed text-sm">
-              <p>
+            <div id="about-short" class="body-text">
+              <p class="mb-3">
                 I'm a software engineer who loves building design systems and
                 component libraries that empower teams to create beloved
                 products faster. Currently, I'm a Senior Software Engineer at
@@ -124,7 +101,7 @@
               </p>
               <button
                 id="show-more-btn"
-                class="print:hidden mt-3 text-sm text-gray-600 hover:text-gray-900 transition-colors underline focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded"
+                class="text-sm text-gray-600 hover:text-gray-900 transition-colors underline focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded"
                 onclick="toggleAbout()"
               >
                 Read more
@@ -132,10 +109,7 @@
             </div>
 
             <!-- Full version (hidden by default) -->
-            <div
-              id="about-full"
-              class="hidden text-gray-700 leading-relaxed space-y-3 text-sm"
-            >
+            <div id="about-full" class="hidden body-text space-y-3">
               <p>
                 I'm a software engineer who loves building design systems and
                 component libraries that empower teams to create beloved
@@ -168,30 +142,27 @@
               </p>
               <button
                 id="show-less-btn"
-                class="print:hidden mt-3 text-sm text-gray-600 hover:text-gray-900 transition-colors underline focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded"
+                class="mt-1 text-sm text-gray-600 hover:text-gray-900 transition-colors underline focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded"
                 onclick="toggleAbout()"
               >
                 Show less
               </button>
             </div>
           </section>
-
           <!-- Experience -->
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">
-              Experience
-            </h2>
+            <h2 class="section-heading">Experience</h2>
 
             <div class="space-y-6">
               <!-- Shopify Senior Software Engineer -->
               <div class="job-entry">
-                <div class="flex justify-between items-baseline mb-1">
-                  <h3 class="text-base text-gray-900">
-                    <span>Senior Software Engineer</span> ·
+                <div class="job-header">
+                  <h3 class="job-title">
+                    <span class="font-serif">Senior Software Engineer</span> ·
                     <a
                       href="https://www.shopify.com"
                       target="_blank"
-                      class="font-semibold hover:text-gray-600 transition-colors external-link"
+                      class="font-semibold text-base link-hover-alt external-link"
                       >Shopify<svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -206,64 +177,59 @@
                         ></path></svg
                     ></a>
                   </h3>
-                  <span
-                    class="text-xs text-gray-600 uppercase tracking-wide whitespace-nowrap ml-4"
-                    >Mar 2021 — Present</span
-                  >
+                  <span class="date-badge">Mar 2021 — Present</span>
                 </div>
-                <p class="text-gray-700 leading-relaxed mb-3 text-sm">
+                <p class="body-text mb-3">
                   Lead technical initiatives advancing Polaris, Shopify's design
                   system. Work closely with cross-functional teams including
                   designers, product managers, and engineers across the company
                   to build scalable component solutions and establish patterns
                   that balance consistency with product flexibility.
                 </p>
-                <ul
-                  class="space-y-1.5 text-gray-700 leading-relaxed text-sm list-disc list-inside"
-                >
+                <ul class="bullet-list">
                   <li>
-                    Drove adoption to 90%+ across Shopify Admin through improved
-                    documentation, tooling, and developer experience
+                    Drove adoption to 90%+ across Shopify admin through improved
+                    documentation and tooling
                   </li>
                   <li>
-                    Built the next evolution of Polaris as web components,
-                    enabling Shopify Apps to build in any framework with
-                    Shopify's design language
+                    Built the next evolution of Polaris as web components
+                    enabling Shopify Apps to build in any framework
                   </li>
                   <li>
                     Led comprehensive token and component system refactor
                     supporting the
                     <a
-                      class="hover:text-gray-500 transition-colors external-link not-print:underline"
+                      class="link-inline"
                       href="https://medium.com/shopify-ux/uplifting-shopify-polaris-7c54fc6564d9"
                       target="_blank"
                       >Polaris uplift redesign</a
                     >
                   </li>
                   <li>
-                    Built theming system enabling customization across multiple
-                    desktop and mobile experiences
-                  </li>
-                  <li>
-                    Mentor engineers on design system architecture, component
-                    API design, and accessibility best practices
+                    Initiated the research and transition from SCSS to
+                    <a
+                      class="link-inline"
+                      href="https://changelog.com/jsparty/190"
+                      target="_blank"
+                      >more scalable alternatives at Shopify</a
+                    >
                   </li>
                 </ul>
-                <p class="text-xs text-gray-600 mt-2 italic">
-                  React, TypeScript, Web Components, Storybook, Figma, Design
-                  Tokens, Playwright, Vitest
+                <p class="meta-text mt-3">
+                  React, TypeScript, Web Components, Playwright, Vitest
                 </p>
               </div>
 
               <!-- Indeed -->
               <div class="job-entry">
-                <div class="flex justify-between items-baseline mb-1">
-                  <h3 class="text-base text-gray-900">
-                    <span>Senior UX Developer</span> ·
+                <div class="job-header">
+                  <h3 class="job-title">
+                    <span class="font-serif">Senior UX Developer</span>
+                    ·
                     <a
                       href="https://www.indeed.com"
                       target="_blank"
-                      class="font-semibold hover:text-gray-600 transition-colors external-link"
+                      class="font-semibold text-base link-hover-alt external-link"
                       >Indeed<svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -278,21 +244,17 @@
                         ></path></svg
                     ></a>
                   </h3>
-                  <span
-                    class="text-xs text-gray-600 uppercase tracking-wide whitespace-nowrap ml-4"
-                    >Mar 2019 — Feb 2021</span
-                  >
+                  <span class="date-badge">Mar 2019 — Feb 2021</span>
                 </div>
-                <p class="text-gray-700 leading-relaxed mb-3 text-sm">
+                <p class="body-text mb-3">
                   Developed core libraries, tools, and documentation for
                   Indeed's internal design system. Worked with a team of
                   designers and engineers to create and maintain the central
-                  design system for all core products—improving operational
-                  efficiency, brand alignment, and design consistency.
+                  design system for all core products resulting in improved
+                  operational efficiency, brand alignment, and design
+                  consistency.
                 </p>
-                <ul
-                  class="space-y-1.5 text-gray-700 leading-relaxed text-sm list-disc list-inside"
-                >
+                <ul class="bullet-list">
                   <li>
                     Built highly accessible interactive components including
                     modals, dropdowns, pickers, and navigation patterns
@@ -303,20 +265,20 @@
                     guidelines
                   </li>
                 </ul>
-                <p class="text-xs text-gray-600 mt-2 italic">
-                  React, TypeScript, JavaScript, Emotion, Jest
+                <p class="meta-text mt-3">
+                  React, Emotion, Chromatic, Storybook, Jest
                 </p>
               </div>
 
               <!-- IBM -->
               <div class="job-entry">
-                <div class="flex justify-between items-baseline mb-1">
-                  <h3 class="text-base text-gray-900">
-                    <span>Front End Engineer</span> ·
+                <div class="job-header">
+                  <h3 class="job-title">
+                    <span class="font-serif">Front End Engineer</span> ·
                     <a
                       href="https://www.ibm.com"
                       target="_blank"
-                      class="font-semibold hover:text-gray-600 transition-colors external-link"
+                      class="font-semibold text-base link-hover-alt external-link"
                       >IBM<svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -331,41 +293,37 @@
                         ></path></svg
                     ></a>
                   </h3>
-                  <span
-                    class="text-xs text-gray-600 uppercase tracking-wide whitespace-nowrap ml-4"
-                    >Aug 2017 — Mar 2019</span
-                  >
+                  <span class="date-badge">Aug 2017 — Mar 2019</span>
                 </div>
-                <p class="text-gray-700 leading-relaxed mb-3 text-sm">
+                <p class="body-text mb-3">
                   Led engineering and design initiatives on IBM Cloud Private
                   for Data, building an on-premise data platform for enterprise
                   customers.
                 </p>
-                <ul
-                  class="space-y-1.5 text-gray-700 leading-relaxed text-sm list-disc list-inside"
-                >
+                <ul class="bullet-list">
                   <li>
-                    Implemented design system components with focus on
-                    accessibility and performance
+                    Implemented Carbon Design System components for Hybrid Cloud
+                    product theme and brand
                   </li>
                   <li>
-                    Managed design system releases and versioning strategy
+                    Developed high-fidelity prototypes and user interfaces for
+                    hybrid cloud data management applications
                   </li>
                 </ul>
-                <p class="text-xs text-gray-600 mt-2 italic">
+                <p class="meta-text mt-3">
                   React, Vue, SCSS, Carbon Design System
                 </p>
               </div>
 
               <!-- GitLab -->
               <div class="job-entry">
-                <div class="flex justify-between items-baseline mb-1">
-                  <h3 class="text-base text-gray-900">
-                    <span>Front End Engineer</span> ·
+                <div class="job-header">
+                  <h3 class="job-title">
+                    <span class="font-serif">Front End Engineer</span> ·
                     <a
                       href="https://about.gitlab.com"
                       target="_blank"
-                      class="hover:text-gray-600 transition-colors external-link font-medium"
+                      class="font-medium text-base link-hover-alt external-link"
                       >GitLab<svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -380,30 +338,26 @@
                         ></path></svg
                     ></a>
                   </h3>
-                  <span
-                    class="text-xs text-gray-600 uppercase tracking-wide whitespace-nowrap ml-4"
-                    >Dec 2016 — May 2017</span
-                  >
+                  <span class="date-badge">Dec 2016 — May 2017</span>
                 </div>
-                <p class="text-gray-700 leading-relaxed mb-3 text-sm">
-                  Collaborated remotely on developing GitLab's web application.
-                  Worked asynchronously with developers and designers across
+                <p class="body-text mb-3">
+                  Collaborated remotely on developing GitLab's Community and
+                  Enterprise web application. Worked fully remote and
+                  asynchronously with developers and designers across global
                   time zones, contributing to UI components and features.
                 </p>
-                <p class="text-xs text-gray-600 mt-2 italic">
-                  Vue, SCSS, Ruby on Rails
-                </p>
+                <p class="meta-text mt-3">Vue, SCSS, Ruby on Rails</p>
               </div>
 
               <!-- Cadre5 -->
               <div class="job-entry">
-                <div class="flex justify-between items-baseline mb-1">
-                  <h3 class="text-base text-gray-900">
-                    <span>Software Engineer</span> ·
+                <div class="job-header">
+                  <h3 class="job-title">
+                    <span class="font-serif">Software Engineer</span> ·
                     <a
                       href="https://www.cadre5.com"
                       target="_blank"
-                      class="hover:text-gray-600 transition-colors external-link font-medium"
+                      class="font-medium text-base link-hover-alt external-link"
                       >Cadre5<svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -418,20 +372,15 @@
                         ></path></svg
                     ></a>
                   </h3>
-                  <span
-                    class="text-xs text-gray-600 uppercase tracking-wide whitespace-nowrap ml-4"
-                    >May 2014 — Dec 2016</span
-                  >
+                  <span class="date-badge">May 2014 — Dec 2016</span>
                 </div>
-                <p class="text-gray-700 leading-relaxed mb-3 text-sm">
+                <p class="body-text mb-3">
                   Developed specialized web application for Oak Ridge National
                   Laboratory with highly customized interface requirements.
                   Architected CSS systems and responsive layouts to meet strict
                   usability and compliance standards for research operations.
                 </p>
-                <p class="text-xs text-gray-600 mt-2 italic">
-                  AngularJS, Less CSS, C#
-                </p>
+                <p class="meta-text mt-3">AngularJS, Less CSS, C#</p>
               </div>
             </div>
           </section>
@@ -441,32 +390,26 @@
         <div class="lg:col-span-1 sidebar">
           <!-- Skills -->
           <section class="mb-10">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Skills</h2>
+            <h2 class="section-heading">Skills</h2>
 
             <div class="space-y-4">
               <div>
-                <h4 class="text-sm font-semibold text-gray-900 mb-2">
-                  Core Technologies
-                </h4>
-                <p class="text-xs text-gray-700 leading-relaxed">
+                <h4 class="skill-heading">Core Technologies</h4>
+                <p class="body-text">
                   TypeScript, React, Web Components, HTML/CSS, Node, GraphQL,
-                  Remix
+                  Remix, Next.js
                 </p>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-gray-900 mb-2">
-                  Design Systems
-                </h4>
-                <p class="text-xs text-gray-700 leading-relaxed">
+                <h4 class="skill-heading">Design Systems</h4>
+                <p class="body-text">
                   Figma, Storybook, Design Tokens, Tailwind CSS, Accessibility
                   (WCAG), Component Architecture
                 </p>
               </div>
               <div>
-                <h4 class="text-sm font-semibold text-gray-900 mb-2">
-                  Tools & Testing
-                </h4>
-                <p class="text-xs text-gray-700 leading-relaxed">
+                <h4 class="skill-heading">Tools & Testing</h4>
+                <p class="body-text">
                   Vite, Rollup, Playwright, Vitest, Jest, Git/GitHub
                 </p>
               </div>
@@ -475,17 +418,15 @@
 
           <!-- Selected Projects -->
           <section class="mb-10">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">
-              Selected Projects
-            </h2>
+            <h2 class="section-heading">Selected Projects</h2>
 
             <div class="space-y-5">
               <div class="project-entry">
-                <h4 class="text-sm font-semibold text-gray-900 mb-1">
+                <h4 class="skill-heading mb-1">
                   <a
                     href="https://github.com/Shopify/polaris"
                     target="_blank"
-                    class="hover:text-gray-600 transition-colors external-link"
+                    class="link-hover-alt external-link"
                     >Shopify Polaris<svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
@@ -500,24 +441,23 @@
                       ></path></svg
                   ></a>
                 </h4>
-                <p class="text-xs text-gray-700 leading-relaxed mb-2">
+                <p class="body-text mb-2">
                   Shopify's design system used by 100+ teams and thousands of
                   app developers. Core contributor to both the React component
                   library and Web Components implementation, enabling
                   framework-agnostic usage across the Shopify ecosystem.
                 </p>
-                <p class="text-xs text-gray-600 italic">
-                  React, Web Components, TypeScript, Design Tokens,
-                  Accessibility
+                <p class="meta-text">
+                  React, TypeScript, Web Components, Design Tokens
                 </p>
               </div>
 
               <div class="project-entry">
-                <h4 class="text-sm font-semibold text-gray-900 mb-1">
+                <h4 class="skill-heading mb-1">
                   <a
                     href="https://polaris-coverage.shopify.com/"
                     target="_blank"
-                    class="hover:text-gray-600 transition-colors external-link"
+                    class="link-hover-alt external-link"
                     >Polaris Coverage<svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
@@ -532,15 +472,14 @@
                       ></path></svg
                   ></a>
                 </h4>
-                <p class="text-xs text-gray-700 leading-relaxed mb-2">
+                <p class="body-text mb-2">
                   Internal tooling that tracks and visualizes Polaris adoption
                   across Shopify's products. Drove 90% adoption across Shopify
                   Admin by making usage patterns visible and actionable for
                   product teams.
                 </p>
-                <p class="text-xs text-gray-600 italic">
-                  Remix, ESLint/Stylelint, Data Visualization, Design System
-                  Metrics
+                <p class="meta-text">
+                  Remix, Data Visualization, Design System Metrics
                 </p>
               </div>
             </div>
@@ -548,23 +487,21 @@
 
           <!-- Education -->
           <section class="mb-10">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Education</h2>
+            <h2 class="section-heading">Education</h2>
             <div>
-              <h4 class="text-sm font-semibold text-gray-900">
-                University of Tennessee
-              </h4>
-              <p class="text-xs text-gray-600 mt-1">Knoxville, TN</p>
-              <p class="text-xs text-gray-700 mt-1">
+              <h4 class="skill-heading mb-0">University of Tennessee</h4>
+              <p class="text-sm text-gray-600 mt-1">Knoxville, TN</p>
+              <p class="text-sm text-gray-700 mt-1">
                 Bachelor of Science in Computer Engineering
               </p>
-              <p class="text-xs text-gray-700">GPA 3.88 / 4.00</p>
+              <p class="text-sm text-gray-700">GPA 3.88 / 4.00</p>
             </div>
           </section>
 
           <!-- Interests -->
           <section>
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Interests</h2>
-            <p class="text-xs text-gray-700 leading-relaxed">
+            <h2 class="section-heading">Interests</h2>
+            <p class="body-text">
               Web accessibility, systems design, rock climbing, hiking,
               philosophy, and digital gardening.
             </p>
