@@ -1,9 +1,5 @@
 # Sam Rose
 
-hello@samrose.me | 865.323.6200
-
----
-
 ## About
 
 I'm a software engineer who loves building design systems and component libraries that empower teams to create beloved software products faster. My work lives at the intersection of design and engineering crafting accessible, well-architected UI infrastructure that scales across hundreds of teams while maintaining flexibility for individual product needs.
